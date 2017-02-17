@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="test.js"></script>
+		<style type="text/css">
+			#imageview{width: 100%;}
+		</style>
+	</head>
+	<body>
+		<p>
+			<input type="button" value="从android取得返回值" onclick="getValueFromAndroid()"/>
+			<span id="value_from_androids"></span>
+		</p>
+
+		<p>
+			<span>泡泡内容：</span>
+			<input id="toast_string" type="text"/><br>
+			<input type="button" onclick="showToast()" value="弹个泡泡"/>
+		</p>
+
+		<p>
+			<input type="button" onclick="selectImage()" value="去百度选图"/><br>
+			<input id="image_url" type="url" /><br>
+			<input type="button" onclick="loadImage()" value="加载图片"/>
+			<p>
+				<img id="imageview"/>
+			</p>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/image_wv" />
+
+    <Button
+        android:text="Find 2000 images, click to select."
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:lines="1"
+        android:id="@+id/imgSelBtn"
+        android:gravity="left|center_vertical|center_horizontal"
+        android:typeface="normal"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="10dp" />
+</LinearLayout>

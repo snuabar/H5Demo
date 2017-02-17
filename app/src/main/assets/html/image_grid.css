@@ -1,0 +1,17 @@
+body {
+	background: black;
+}
+#img_list {
+	width: 100%;
+}
+.sub_div {
+	background: gray;
+	display: flex;
+	float: left;
+	width: 190px;
+	height: 190px;
+	margin: 4px;
+}
+.imgcontent {
+	margin: auto;
+}
