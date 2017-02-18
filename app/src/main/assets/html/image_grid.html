@@ -3,12 +3,17 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>Image List</title>
 		<script type="text/javascript" src="image_grid.js"></script>
 		<link rel="stylesheet" type="text/css" href="image_grid.css"></link>
 	</head>
 
-	<body onload="loadImageList()" onresize="doResize()">
+	<body onload="loadImageList()" >
+		<div id="float_seat">
+			<input id="btn_refresh" type="button" onclick="doResize()"/>
+			<span id="title_span">Image List</span>
+		</div>
+		<div id="unfloat_seat"></div>
 		<div id="img_list"></div>
 	</body>
 

@@ -1,10 +1,53 @@
 body {
 	background: black;
 }
+
 #img_list {
 	width: 100%;
+	background: green;
 }
-.sub_div {
+
+#unfloat_seat,
+#float_seat {
+	width: 100%;
+	height: 32px;
+	left: 0px;
+}
+
+#float_seat {
+	position: fixed;
+	top: -3px;
+	left: -3px;
+	background: gray;
+	border: double;
+	border-color: white;
+}
+
+#title_span {
+	height: 32px;
+	width: 80%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: larger;
+	font-family: arial;
+	color: white;
+}
+
+#btn_refresh {
+	height: 30px;
+	width: 30px;
+	float: right;
+	display: flex;
+	background: transparent;
+	border: none;
+	background-image: url(icn_refresh.png);
+	background-position: center;
+	background-size: cover;
+}
+
+
+/*.sub_div {
 	background: gray;
 	display: flex;
 	float: left;
@@ -15,4 +58,4 @@ body {
 }
 .imgcontent {
 	margin: auto;
-}
+}*/

@@ -3,24 +3,16 @@ package com.h5.h5demo;
 import android.annotation.TargetApi;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -54,9 +46,9 @@ public class ImageActivity extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setDomStorageEnabled(true);
         webView.addJavascriptInterface(new JSInterface(this), JSInterface.EXPOSE_NAME);
-//        webView.loadUrl("https://image.baidu.com/");
+        webView.loadUrl("https://image.baidu.com/");
 
-        webView.loadUrl(ImgGridUrl);
+//        webView.loadUrl(ImgGridUrl);
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -87,7 +79,7 @@ public class ImageActivity extends AppCompatActivity {
                     if (JSInterface.img_cache.contains(url))
                         return;
 
-                    Log.e("123456", "Resource: " + url);
+//                    Log.e("123456", "Resource: " + url);
                     JSInterface.img_cache.add(url);
                     updateImageCount();
                 }
